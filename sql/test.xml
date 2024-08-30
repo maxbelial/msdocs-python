@@ -13,8 +13,6 @@
         <include refid="${include_target}"/>
         <include refid="somewhere"/>
     </sql>
-    <select * from fruits
-    </select>
     <select id="testInclude">
         SELECT
         name,
@@ -27,9 +25,7 @@
     </select>
     <select id="testIf">
         SELECT
-        name,
-        category,
-        price
+        *
         FROM
         fruits
         WHERE
